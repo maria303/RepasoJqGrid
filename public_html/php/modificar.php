@@ -5,7 +5,7 @@ $nombre = $_POST['nombre'];
 
 $conn = mysqli_connect('localhost', 'root', '', 'jurassicpets');
 
-$sql = "UPDATE categoria SET nombre = '".$nombre."' WHERE id = ".$id;
+$sql = "UPDATE categoria SET nombre = '$nombre' WHERE id = $id";
 
 mysqli_query($conn, $sql);
 
